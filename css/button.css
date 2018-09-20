@@ -1,0 +1,66 @@
+.menuwrapper {
+	width: 100%;
+	max-width: 300px;
+	float: left;
+	position: relative;
+	margin-top: 25px;
+}
+
+.menuwrapper button {
+	background: #ffffff;
+	border: none;
+	width: 48px;
+	height: 45px;
+	text-indent: -900em;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+}
+
+.menuwrapper button:hover,
+.menuwrapper button.active,
+.menuwrapper ul {
+	background: #aaa;
+}
+
+.menuwrapper button:after {
+	content: '';
+	position: absolute;
+	width: 68%;
+	height: 5px;
+	background: black;
+	top: 10px;
+	left: 16%;
+	box-shadow: 
+		0 10px 0 black, 
+		0 20px 0 black;
+}
+
+.menuwrapper ul {
+	padding: 0;
+	list-style: none;
+}
+
+.menuwrapper li {
+	position: relative;
+}
+
+.menuwrapper li a {
+	display: block;
+	position: relative;
+	padding: 15px 20px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	color: black;
+	outline: none;
+}
+
+.menuwrapper .menu {
+	margin: 5px 0 0 0;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+
+}

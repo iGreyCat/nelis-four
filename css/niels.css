@@ -1,0 +1,43 @@
+.container{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 900px;
+}
+
+.big-container{
+	max-width: 1080px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1em;
+   margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+.content{
+  grid-column: 1 / 4;
+}
+
+@media all and (max-width: 700px) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+}
+
+aside,
+article,
+.content {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+
